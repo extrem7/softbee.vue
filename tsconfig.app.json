@@ -1,12 +1,26 @@
 {
   "extends": "@vue/tsconfig/tsconfig.web.json",
-  "include": ["env.d.ts", "src/**/*", "src/**/*.vue"],
-  "exclude": ["src/**/__tests__/*"],
+  "include": [
+    "env.d.ts",
+    "src/**/*",
+    "src/**/*.vue",
+    "./storybook/*"
+  ],
   "compilerOptions": {
     "composite": true,
     "baseUrl": ".",
+    "typeRoots": [
+      "types",
+      "./node_modules/@types"
+    ],
+    "types": [
+      "vite/client",
+      "vitest/globals"
+    ],
     "paths": {
-      "@/*": ["./src/*"]
+      "~/*": [
+        "./src/*"
+      ]
     }
   }
 }
