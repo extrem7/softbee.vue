@@ -1,3 +1,17 @@
 {
-  "recommendations": ["johnsoncodehk.volar", "johnsoncodehk.vscode-typescript-vue-plugin"]
+  "recommendations": [
+    "johnsoncodehk.volar",
+    "johnsoncodehk.vscode-typescript-vue-plugin",
+    "dbaeumer.vscode-eslint",
+    "adam-bender.commit-message-editor",
+    "bradlc.vscode-tailwindcss",
+    "steoates.autoimport",
+    "formulahendry.auto-rename-tag",
+    "streetsidesoftware.code-spell-checker",
+    "naumovs.color-highlight",
+    "sdras.vue-vscode-snippets"
+  ],
+  "unwantedRecommendations": [
+    "octref.vetur"
+  ]
 }
