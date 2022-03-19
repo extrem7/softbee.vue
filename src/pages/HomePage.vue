@@ -1,5 +1,5 @@
 <script setup lang="ts"></script>
 
 <template>
-  <main>Softbee</main>
+  <h1 class="text-3xl font-bold underline px-3">Hello world!</h1>
 </template>
