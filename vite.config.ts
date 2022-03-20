@@ -8,7 +8,7 @@ import VueJsx from '@vitejs/plugin-vue-jsx'
 import { visualizer } from 'rollup-plugin-visualizer'
 
 export const config: UserConfig = {
-  alias: { '~': fileURLToPath(new URL('./src', import.meta.url)) },
+  resolve: { alias: { '~': fileURLToPath(new URL('./src', import.meta.url)) } },
   plugins: [Vue(), VueJsx()],
   test: { globals: true },
 }

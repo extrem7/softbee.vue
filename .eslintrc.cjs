@@ -17,6 +17,20 @@ const DENIED_PATH_GROUPS = [
 /** @type {import('eslint').Linter.Config} */
 module.exports = {
   root: true,
+  env: {
+    node: true,
+    'vue/setup-compiler-macros': true,
+  },
+  parser: 'vue-eslint-parser',
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+  },
+  settings: {
+    'import/resolver': {
+      typescript: {},
+    },
+  },
   plugins: ['tailwindcss'],
   extends: [
     'eslint:recommended',
@@ -27,10 +41,6 @@ module.exports = {
     'plugin:storybook/recommended',
     'plugin:tailwindcss/recommended',
   ],
-  env: {
-    node: true,
-    'vue/setup-compiler-macros': true,
-  },
   rules: {
     // base rules
     'no-console': 'warn',
@@ -58,7 +68,7 @@ module.exports = {
     'import/extensions': [
       'error',
       'ignorePackages',
-      { js: 'never', jsx: 'never', ts: 'never', tsx: 'never' },
+      { js: 'never', jsx: 'never', ts: 'never', tsx: 'never', cjs: 'never' },
     ],
     'import/prefer-default-export': 'off',
     'import/order': [

@@ -1,14 +1,26 @@
 {
-  "files": [],
-  "references": [
-    {
-      "path": "./tsconfig.vite-config.json"
-    },
-    {
-      "path": "./tsconfig.app.json"
-    },
-    {
-      "path": "./tsconfig.vitest.json"
+  "extends": "@vue/tsconfig/tsconfig.web.json",
+  "include": [
+    "env.d.ts",
+    "src/**/*",
+    "src/**/*.vue",
+    "./storybook/*"
+  ],
+  "compilerOptions": {
+    "composite": true,
+    "baseUrl": ".",
+    "typeRoots": [
+      "types",
+      "./node_modules/@types"
+    ],
+    "types": [
+      "vite/client",
+      "vitest/globals"
+    ],
+    "paths": {
+      "~/*": [
+        "./src/*"
+      ]
     }
-  ]
+  }
 }
