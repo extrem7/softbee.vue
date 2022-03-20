@@ -6,6 +6,7 @@ import router from './providers/router'
 import App from './App.vue'
 
 import './index.css'
+import './fonts/index.css'
 
 export const app = createApp(App)
 
