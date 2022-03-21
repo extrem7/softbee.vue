@@ -1,7 +1,5 @@
 <script setup lang="ts">
-defineProps({
-  outline: { type: Boolean },
-})
+defineProps({ outline: Boolean })
 </script>
 
 <template>

@@ -2,7 +2,7 @@ import type { Meta, StoryFn } from '@storybook/vue3'
 import { SButton } from '.'
 
 const meta: Meta = {
-  title: 'Button',
+  title: 'UI/Button',
   component: SButton,
 }
 

@@ -1,3 +1,7 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import arrow from '~/shared/assets/arrow.svg'
+</script>
 
-<template>s</template>
+<template>
+  <img :src="arrow" />
+</template>
