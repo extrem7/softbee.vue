@@ -1,2 +1,6 @@
 export { default as SButton } from './SButton.vue'
 export { default as SArrow } from './SArrow.vue'
+export { default as SInstagram } from './SInstagramIcon.vue'
+export { default as SLinkedIn } from './SLinkedInIcon.vue'
+export { default as SFacebook } from './SFacebookIcon.vue'
+export { default as SUpWork } from './SUpworkIcon.vue'
