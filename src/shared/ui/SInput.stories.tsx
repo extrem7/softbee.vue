@@ -9,8 +9,6 @@ const meta: Meta = {
 export default meta
 
 export const Input: StoryFn = (props) => (
-  <SInput {...props}>Let’s talk 👋</SInput>
+  <SInput {...props}> Let’s talk 👋 </SInput>
 )
-
-export const Large = Input.bind({})
-Large.args = { outline: true }
+  
