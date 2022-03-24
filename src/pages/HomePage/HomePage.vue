@@ -2,6 +2,8 @@
 import { SMenu } from '~/shared/ui/layout'
 import menuImage from '~/shared/assets/menuImage.svg'
 import { SButton } from '~/shared/ui'
+import SArrow from '../../shared/ui/SArrow.vue'
+import SArrowNext from '../../shared/ui/SArrowNext.vue'
 </script>
 
 <template>
