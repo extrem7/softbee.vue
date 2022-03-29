@@ -2,15 +2,13 @@
 import { SMenu } from '~/shared/ui/layout'
 import menuImage from '~/shared/assets/menuImage.svg'
 import { SButton } from '~/shared/ui'
-import SArrow from '../../shared/ui/SArrow.vue'
-import SArrowNext from '../../shared/ui/SArrowNext.vue'
 </script>
 
 <template>
   <div class="bg-[url(~/shared/assets/menuBg.svg)] bg-right bg-no-repeat">
     <SMenu />
     <div class="pb-40">
-      <div class="grid grid-cols-12 mx-auto xl:container">
+      <div class="xl:container grid grid-cols-12 mx-auto">
         <div class="col-start-3 col-end-6 self-center">
           <h1 class="text-4xl font-bold text-[#104065]">
             Your partners in new products creating
