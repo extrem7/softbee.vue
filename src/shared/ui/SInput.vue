@@ -4,6 +4,6 @@ defineProps({ outline: Boolean })
 
 <template>
   <input
-    class="py-2 w-max placeholder:text-2xl text-2xl text-white placeholder:text-white bg-transparent border-b-[0.1px] border-b-white focus:border-b-[#F5D040] outline-none"
+    class="placeholder:[#a0a0a0] py-2 w-max placeholder:text-2xl text-2xl text-[#a0a0a0] bg-transparent border-b-[0.1px] border-b-white focus:border-b-[#F5D040] outline-none duration-300 ease-in-out"
   />
 </template>

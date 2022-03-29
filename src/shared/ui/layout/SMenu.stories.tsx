@@ -2,7 +2,7 @@ import type { Meta, StoryFn } from '@storybook/vue3'
 import { SMenu } from '.'
 
 const meta: Meta = {
-  title: 'UI/layout/SMenu',
+  title: 'UI/layout/Menu',
   component: SMenu,
 }
 
