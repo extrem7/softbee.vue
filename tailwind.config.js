@@ -6,6 +6,9 @@ module.exports = {
         sans: ['Gilroy'],
       },
     },
+    screens: {
+      '2xl': '1200px',
+    },
   },
   plugins: [],
 }
