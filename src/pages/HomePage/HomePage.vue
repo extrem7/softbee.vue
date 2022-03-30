@@ -1,11 +1,14 @@
 <script setup lang="ts">
 import { SMenu, SFooter } from '~/shared/ui/layout'
 import menuImage from '~/shared/assets/menuImage.svg'
-import { SButton } from '~/shared/ui'
+import { SButton, SDashboard } from '~/shared/ui'
 </script>
 
 <template>
-  <div class="bg-[url(~/shared/assets/menuBg.svg)] bg-right bg-no-repeat">
+  <div
+    style="background-image: url(src/shared/assets/menuBg.svg)"
+    class="bg-right bg-no-repeat"
+  >
     <SMenu />
     <div class="pb-40">
       <div class="grid grid-cols-12 mx-auto max-w-[1200px]">
@@ -21,6 +24,12 @@ import { SButton } from '~/shared/ui'
         <div class="col-start-7 col-end-13"><img :src="menuImage" /></div>
       </div>
     </div>
-    <SFooter />
   </div>
+  <div
+    class="py-24 bg-[#e7e7e7] bg-right-top bg-no-repeat"
+    style="background-image: url(src/shared/assets/bord.svg)"
+  >
+    <SDashboard />
+  </div>
+  <SFooter />
 </template>
