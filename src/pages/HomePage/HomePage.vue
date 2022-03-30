@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { SMenu, SFooter } from '~/shared/ui/layout'
 import menuImage from '~/shared/assets/menuImage.svg'
+import pcTable from '~/shared/assets/pcTable.svg'
 import { SButton, SDashboard } from '~/shared/ui'
 </script>
 
@@ -30,6 +31,29 @@ import { SButton, SDashboard } from '~/shared/ui'
     style="background-image: url(src/shared/assets/bord.svg)"
   >
     <SDashboard />
+  </div>
+  <div class="py-24">
+    <div class="container grid order-last grid-cols-12 mx-auto">
+      <div class="col-start-9 col-end-13 self-center">
+        <h1 class="w-[415px] text-4xl font-bold text-[#104065]">
+          We love taking products from vision to reality.
+        </h1>
+        <p class="my-12 text-xl text-[#104065]">
+          Somethings about how we work. We do all sorts of programming: Web,
+          mobile, backend, desktop development. JS is our lovest language. Blala
+          something more.
+        </p>
+        <p class="mb-12 text-xl text-[#104065]">
+          We are a team of passionated mobile and web developers who love what
+          they do. Also we love being on the same page with our clients and to
+          deliver real cases to users.
+        </p>
+        <SButton>Meet our team 👊</SButton>
+      </div>
+      <div class="order-first col-start-1 col-end-7">
+        <img :src="pcTable" />
+      </div>
+    </div>
   </div>
   <SFooter />
 </template>

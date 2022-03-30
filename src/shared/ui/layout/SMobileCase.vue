@@ -22,3 +22,5 @@ defineProps({
     </div>
   </div>
 </template>
+
+})
