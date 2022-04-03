@@ -13,20 +13,23 @@ import support from '~/shared/assets/support.svg'
 
 <template>
   <div
-    style="background-image: url(src/shared/assets/menuBg.svg)"
-    class="bg-right bg-no-repeat"
+    class="bg-right bg-no-repeat bg-none xl:bg-[url(src/shared/assets/menuBg.svg)]"
   >
     <SMenu />
-    <div class="pb-40">
-      <div class="grid grid-cols-12 mx-auto max-w-[1200px]">
-        <div class="col-start-1 col-end-5 self-center">
-          <h1 class="text-4xl font-bold text-[#104065]">
+    <div class="py-24 md:pt-0 md:pb-40">
+      <div
+        class="flex flex-col-reverse px-10 mx-auto max-w-[1200px] text-center md:grid md:grid-cols-12 md:text-left"
+      >
+        <div class="self-center mt-12 md:col-start-1 md:col-end-5 md:mt-0">
+          <h1
+            class="text-3xl font-bold text-center text-[#104065] md:text-4xl md:text-left"
+          >
             Your partners in new products creating
           </h1>
-          <p class="my-12 text-2xl text-[#104065]">
+          <p class="mt-6 mb-12 text-2xl text-[#104065] md:my-12">
             with a beer drinking afterwards. and staying at home =)
           </p>
-          <SButton>Let`s talk</SButton>
+          <SButton class="text-xl md:text-2xl">Let`s talk</SButton>
         </div>
         <div class="col-start-6 col-end-13 mx-auto">
           <img :src="menuImage" />
@@ -35,15 +38,18 @@ import support from '~/shared/assets/support.svg'
     </div>
   </div>
   <div
-    class="py-24 bg-[#e7e7e7] bg-right-top bg-no-repeat"
-    style="background-image: url(src/shared/assets/bord.svg)"
+    class="py-24 bg-[#e7e7e7] bg-right-top bg-no-repeat xl:bg-[url('src/shared/assets/bord.svg')]"
   >
     <SDashboard />
   </div>
   <div class="py-24">
-    <div class="container grid order-last grid-cols-12 mx-auto">
-      <div class="col-start-9 col-end-13 self-center">
-        <h1 class="w-[415px] text-4xl font-bold text-[#104065]">
+    <div
+      class="flex flex-col order-last px-10 mx-auto max-w-[1200px] md:grid md:grid-cols-12"
+    >
+      <div
+        class="self-center text-center md:col-start-8 md:col-end-13 md:text-left"
+      >
+        <h1 class="mt-12 text-4xl font-bold text-[#104065] md:mt-0">
           We love taking products from vision to reality.
         </h1>
         <p class="my-12 text-xl text-[#104065]">
@@ -56,7 +62,7 @@ import support from '~/shared/assets/support.svg'
           they do. Also we love being on the same page with our clients and to
           deliver real cases to users.
         </p>
-        <SButton>Meet our team 👊</SButton>
+        <SButton class="text-xl md:text-2xl">Meet our team 👊</SButton>
       </div>
       <div class="order-first col-start-1 col-end-8 self-center">
         <img class="mx-auto" :src="pcTable" />
@@ -64,45 +70,87 @@ import support from '~/shared/assets/support.svg'
     </div>
   </div>
   <div class="py-24">
-    <div class="container mx-auto">
-      <div class="py-12 mx-auto w-[83.3%] rounded-3xl shadow-2xl">
-        <div class="mx-auto w-[80%]">
-          <p class="mb-12 text-4xl font-bold text-center text-[#104065]">
+    <div class="px-10 mx-auto max-w-[1200px]">
+      <div
+        class="p-6 mx-auto w-[100%] rounded-3xl shadow-2xl sm:w-[83.3%] lg:p-12"
+      >
+        <div class="mx-auto w-full sm:w-[80%]">
+          <p
+            class="mb-6 text-2xl font-bold text-center text-[#104065] md:mb-12 lg:text-4xl"
+          >
             Looking for a team willing to go the extra mile for you?
           </p>
         </div>
         <div class="flex justify-around">
-          <div><img :src="gears" alt="" /></div>
+          <div><img class="hidden lg:block" :src="gears" alt="" /></div>
           <div>
-            <p class="text-4xl text-[#104065]">You're in the right place.</p>
+            <p
+              class="text-2xl text-center text-[#104065] md:text-left lg:text-4xl"
+            >
+              You're in the right place.
+            </p>
           </div>
-          <div><img :src="code" alt="" /></div>
+          <div><img class="hidden lg:block" :src="code" alt="" /></div>
         </div>
       </div>
       <div class="mt-24 text-[#104065]">
-        <div class="mb-14"><p class="text-4xl text-center">What we do?</p></div>
-        <div class="flex justify-around">
-          <div class="flex">
-            <img :src="search" alt="" />
-            <p class="self-center ml-6 text-3xl font-bold text-[#104065]">
+        <div class="mb-6 lg:mb-14">
+          <p class="text-4xl text-center">What we do?</p>
+        </div>
+        <div class="flex flex-wrap justify-around">
+          <div class="flex mx-6 mt-6 lg:mt-0">
+            <div class="self-center">
+              <img
+                class="hidden sm:block sm:w-[70%] md:w-[80%]"
+                :src="search"
+                alt=""
+              />
+            </div>
+            <p
+              class="self-center ml-6 text-xl ms:text-2xl font-bold text-[#104065] md:text-3xl lg:text-3xl"
+            >
               Research
             </p>
           </div>
-          <div class="flex">
-            <img :src="design" alt="" />
-            <p class="self-center ml-6 text-3xl font-bold text-[#104065]">
+          <div class="flex mx-6 mt-6 lg:mt-0">
+            <div class="self-center">
+              <img
+                class="hidden sm:block sm:w-[70%] md:w-[80%]"
+                :src="design"
+                alt=""
+              />
+            </div>
+            <p
+              class="self-center ml-6 text-xl ms:text-2xl font-bold text-[#104065] md:text-3xl lg:text-3xl"
+            >
               Design
             </p>
           </div>
-          <div class="flex">
-            <img :src="build" alt="" />
-            <p class="self-center ml-6 text-3xl font-bold text-[#104065]">
+          <div class="flex mx-6 mt-6 lg:mt-0">
+            <div class="self-center">
+              <img
+                class="hidden sm:block sm:w-[70%] md:w-[80%]"
+                :src="build"
+                alt=""
+              />
+            </div>
+            <p
+              class="self-center ml-6 text-xl ms:text-2xl font-bold text-[#104065] md:text-3xl lg:text-3xl"
+            >
               Build
             </p>
           </div>
-          <div class="flex">
-            <img :src="support" alt="" />
-            <p class="self-center ml-6 text-3xl font-bold text-[#104065]">
+          <div class="flex mx-6 mt-6 lg:mt-0">
+            <div class="self-center">
+              <img
+                class="hidden sm:block sm:w-[70%] md:w-[80%]"
+                :src="support"
+                alt=""
+              />
+            </div>
+            <p
+              class="self-center ml-6 text-xl ms:text-2xl font-bold text-[#104065] md:text-3xl lg:text-3xl"
+            >
               Support
             </p>
           </div>
