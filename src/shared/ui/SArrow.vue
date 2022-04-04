@@ -3,5 +3,5 @@ import arrow from '~/shared/assets/arrow.svg'
 </script>
 
 <template>
-  <img :src="arrow" />
+  <img class="cursor-pointer" :src="arrow" />
 </template>

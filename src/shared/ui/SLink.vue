@@ -5,14 +5,14 @@ defineProps({
 </script>
 
 <template>
-  <a
-    href="#"
+  <RouterLink
+    to="#"
     :class="[
       footer
         ? 'text-[#ffffff] hover:text-[#F5D040] whitespace-nowrap'
-        : 'text-[#606060]  hover:text-[#104065] ',
+        : 'text-[#674141]  hover:text-[#104065] ',
     ]"
     class="self-center text-xl font-medium duration-300 ease-in-out"
-    ><slot
-  /></a>
+    ><slot />
+  </RouterLink>
 </template>

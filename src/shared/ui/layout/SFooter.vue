@@ -39,7 +39,7 @@ import SInput from '../SInput.vue'
             placeholder="Let’s create something dope!"
           />
           <button
-            class="py-1 px-5 text-3xl text-[#F5D040] hover:text-[#104065] hover:bg-[#F5D040] rounded-xl border-[2px] border-[#F5D040] duration-300 ease-in-out sm:mt-6"
+            class="py-1 px-5 mt-6 text-3xl text-[#F5D040] hover:text-[#104065] hover:bg-[#F5D040] rounded-xl border-[2px] border-[#F5D040] duration-300 ease-in-out"
           >
             ➔
           </button>

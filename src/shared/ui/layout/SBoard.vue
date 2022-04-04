@@ -9,6 +9,6 @@ import SInput from '../SInput.vue'
     <p class="mb-10 text-4xl text-white">
       Hey! Let’s get started. We’re SoftBee, and you are?👋
     </p>
-    <SInput class="mr-6 w-full" placeholder="Lovely Person" />
+    <SInput placeholder="Lovely Person" />
   </div>
 </template>

@@ -34,18 +34,18 @@ onUnmounted(() => {
 
 <template>
   <div
-    class="bg-no-repeat lg:bg-[url(~/shared/assets/menu.svg)] md:min-h-[216px]"
+    class="bg-no-repeat md:min-h-[216px] lg:bg-[url(~/shared/assets/menu.svg)]"
     :class="[isStick ? 'bg-none' : '']"
   >
     <div
       ref="menu"
       :class="[isStick ? 'fixed  justify-between w-full' : 'lg:bg-transparent']"
-      class="flex justify-between py-6 px-12 bg-[#104065] duration-200 lg:grid lg:grid-cols-12"
+      class="flex z-50 justify-between py-6 px-12 bg-[#104065] duration-200 lg:grid lg:grid-cols-12"
     >
       <div
         class="order-last self-center w-[140px] lg:order-first lg:col-start-1 lg:col-end-4"
       >
-        <a href="#"><img :src="logo" /></a>
+        <RouterLink to="/"><img :src="logo" /></RouterLink>
       </div>
       <div class="w-[40px] cursor-pointer lg:hidden" @click="isActive = true">
         <img class="w-full" :src="menuSvg" alt="" />
@@ -55,7 +55,7 @@ onUnmounted(() => {
       >
         <div class="flex flex-col lg:flex-row">
           <SLink :footer="isStick" class="lg:mx-6" href="#">Work</SLink>
-          <SLink :footer="isStick" class="mt-6 lg:mx-6 lg:mt-0" href="#"
+          <SLink to="/team" :footer="isStick" class="mt-6 lg:mx-6 lg:mt-0"
             >Our Team</SLink
           >
           <SLink :footer="isStick" class="my-6 lg:my-0 lg:mx-6" href="#"
@@ -69,7 +69,7 @@ onUnmounted(() => {
     </div>
   </div>
   <div
-    class="lg:hidden"
+    class="z-50 lg:hidden"
     :class="{
       'fixed top-[0px] duration-300 ease-in-out w-full h-full bg-black/50':
         isActive,
@@ -78,12 +78,12 @@ onUnmounted(() => {
   >
     <div
       :class="[isActive ? 'left-[0px]' : 'left-[-500px]']"
-      class="fixed top-[0px] w-[285px] h-[100vh] bg-[#104065] duration-200 ease-in-out"
+      class="fixed top-[0px] z-50 w-[285px] h-[100vh] bg-[#104065] duration-200 ease-in-out"
       @click.stop
     >
       <div class="flex flex-col mt-6">
         <SLink footer class="my-4 text-3xl">Work</SLink>
-        <SLink footer class="my-4 text-3xl">Our team</SLink>
+        <SLink to="/team" footer class="my-4 text-3xl">Our team</SLink>
         <SLink footer class="my-4 text-3xl">Blog</SLink>
         <SButton class="mx-auto mt-2 w-8/12">Let’s talk 👋</SButton>
       </div>

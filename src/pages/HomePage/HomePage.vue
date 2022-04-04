@@ -98,7 +98,7 @@ import support from '~/shared/assets/support.svg'
           <p class="text-4xl text-center">What we do?</p>
         </div>
         <div class="flex flex-wrap justify-around">
-          <div class="flex mx-6 mt-6 lg:mt-0">
+          <div class="flex justify-center mt-6 w-[230px] lg:mt-0">
             <div class="self-center">
               <img
                 class="hidden sm:block sm:w-[70%] md:w-[80%]"
@@ -107,12 +107,12 @@ import support from '~/shared/assets/support.svg'
               />
             </div>
             <p
-              class="self-center ml-6 text-xl ms:text-2xl font-bold text-[#104065] md:text-3xl lg:text-3xl"
+              class="self-center text-xl ms:text-2xl font-bold text-[#104065] sm:ml-6 md:text-3xl lg:text-3xl"
             >
               Research
             </p>
           </div>
-          <div class="flex mx-6 mt-6 lg:mt-0">
+          <div class="flex justify-center mt-6 w-[230px] lg:mt-0">
             <div class="self-center">
               <img
                 class="hidden sm:block sm:w-[70%] md:w-[80%]"
@@ -121,12 +121,12 @@ import support from '~/shared/assets/support.svg'
               />
             </div>
             <p
-              class="self-center ml-6 text-xl ms:text-2xl font-bold text-[#104065] md:text-3xl lg:text-3xl"
+              class="self-center text-xl ms:text-2xl font-bold text-[#104065] sm:ml-6 md:text-3xl lg:text-3xl"
             >
               Design
             </p>
           </div>
-          <div class="flex mx-6 mt-6 lg:mt-0">
+          <div class="flex justify-center mt-6 w-[230px] lg:mt-0">
             <div class="self-center">
               <img
                 class="hidden sm:block sm:w-[70%] md:w-[80%]"
@@ -135,12 +135,12 @@ import support from '~/shared/assets/support.svg'
               />
             </div>
             <p
-              class="self-center ml-6 text-xl ms:text-2xl font-bold text-[#104065] md:text-3xl lg:text-3xl"
+              class="self-center text-xl ms:text-2xl font-bold text-[#104065] sm:ml-6 md:text-3xl lg:text-3xl"
             >
               Build
             </p>
           </div>
-          <div class="flex mx-6 mt-6 lg:mt-0">
+          <div class="flex justify-center mt-6 w-[230px] lg:mt-0">
             <div class="self-center">
               <img
                 class="hidden sm:block sm:w-[70%] md:w-[80%]"
@@ -149,7 +149,7 @@ import support from '~/shared/assets/support.svg'
               />
             </div>
             <p
-              class="self-center ml-6 text-xl ms:text-2xl font-bold text-[#104065] md:text-3xl lg:text-3xl"
+              class="self-center text-xl ms:text-2xl font-bold text-[#104065] sm:ml-6 md:text-3xl lg:text-3xl"
             >
               Support
             </p>
