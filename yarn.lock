@@ -3459,6 +3459,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/react@file:./stub/types__react::locator=softbee.vue%40workspace%3A.":
+  version: 0.0.0
+  resolution: "@types/react@file:./stub/types__react#./stub/types__react::hash=19401f&locator=softbee.vue%40workspace%3A."
+  checksum: b2710efe4709e9c33204a24b70aadeda3275fca724b47f9fb95ed05bba601ba7bd1b89de48c99bd9dd4f9103fdeab51470112361ce5149de89cd4a7e7d9f9159
+  languageName: node
+  linkType: hard
+
 "@types/react@npm:*":
   version: 17.0.41
   resolution: "@types/react@npm:17.0.41"
@@ -13596,6 +13603,7 @@ __metadata:
     "@types/jsdom": ^16.2.14
     "@types/lodash-es": ^4.17.6
     "@types/node": ^16.11.25
+    "@types/react": "file:./stub/types__react"
     "@vitejs/plugin-vue": ^2.2.2
     "@vitejs/plugin-vue-jsx": ^1.3.7
     "@vue/eslint-config-prettier": ^7.0.0
