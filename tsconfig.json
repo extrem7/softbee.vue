@@ -7,7 +7,6 @@
     "./storybook/*"
   ],
   "compilerOptions": {
-    "composite": true,
     "baseUrl": ".",
     "typeRoots": [
       "types",
