@@ -7,8 +7,8 @@ defineProps({
 </script>
 
 <template>
-  <div class="relative max-w-[300px]">
-    <img :src="img" />
+  <div class="relative max-w-[300px] rounded">
+    <img :src="img" class="rounded-2xl" />
     <div
       class="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-[#104065] rounded-b-2xl"
     />

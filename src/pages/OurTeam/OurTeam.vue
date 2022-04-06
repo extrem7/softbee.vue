@@ -1,52 +1,28 @@
 <script setup lang="ts">
-import { ref, watchEffect } from 'vue'
+import { ref } from 'vue'
 import { SMenu, SFooter, SMemberCard } from '~/shared/ui/layout'
 import { SArrow } from '~/shared/ui'
 import ourTeamHeader from '~/shared/assets/ourTeamHeader.svg'
-import memberVlad from '~/shared/assets/memberVlad.png'
-import memberYuri from '~/shared/assets/memberYuri.png'
+import urix from '~/shared/assets/urix.png'
+import shrek from '~/shared/assets/shrek.jpg'
+import manura from '~/shared/assets/manura.jpg'
 import ourTeamAboutUs from '~/shared/assets/ourTeamAboutUs.svg'
 
 const items = [
   {
-    img: memberVlad,
-    description: 'Design',
-    name: 'Vlad',
+    img: urix,
+    description: 'VueLead',
+    name: 'urix',
   },
   {
-    img: memberYuri,
-    description: 'Vue.js developer',
-    name: 'Yuri',
+    img: shrek,
+    description: 'VueJunior',
+    name: 'maxesn',
   },
   {
-    img: memberVlad,
-    description: 'Design',
-    name: 'Vlad',
-  },
-  {
-    img: memberVlad,
-    description: 'Design',
-    name: 'Vlad',
-  },
-  {
-    img: memberYuri,
-    description: 'Vue.js developer',
-    name: 'Yuri',
-  },
-  {
-    img: memberVlad,
-    description: 'Design',
-    name: 'Vlad',
-  },
-  {
-    img: memberYuri,
-    description: 'Vue.js developer',
-    name: 'Yuri',
-  },
-  {
-    img: memberYuri,
-    description: 'Vue.js developer',
-    name: 'Yuri',
+    img: manura,
+    description: 'VueTrainee',
+    name: 'manura',
   },
 ]
 
