@@ -5,6 +5,10 @@ module.exports = {
       fontFamily: {
         sans: ['Gilroy'],
       },
+      colors: {
+        yellowstone: '#F5D040',
+        blueSky: '#104065',
+      },
     },
     screens: {
       sm: '576px',

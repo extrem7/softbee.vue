@@ -1,11 +1,15 @@
-export { default as SButton } from './SButton.vue'
-export { default as SArrow } from './SArrow.vue'
-export { default as SInstagram } from './SInstagramIcon.vue'
-export { default as SLinkedIn } from './SLinkedInIcon.vue'
-export { default as SFacebook } from './SFacebookIcon.vue'
-export { default as SUpWork } from './SUpworkIcon.vue'
-export { default as SInput } from './SInput.vue'
-export { default as SLink } from './SLink.vue'
-export { default as SArrowNext } from './SArrowNext.vue'
-export { default as SDashboard } from './SDashboard.vue'
-export { default as SDeclarationCircle } from './SDeclarationCircle.vue'
+export { SButton } from './SButton'
+export { SArrow } from './SArrow'
+export { SArrowNext } from './SArrowNext'
+export {
+  SFacebookIcon,
+  SInstagramIcon,
+  SLinkedInIcon,
+  SUpworkIcon,
+} from './SIcon'
+export { SInput } from './SInput'
+export { SLink } from './SLink'
+export { SDashboard } from './SDashboard'
+export { SDeclarationCircle } from './SDeclarationCircle'
+export { STriangle } from './STriangle'
+export { SPopup } from './SPopup'

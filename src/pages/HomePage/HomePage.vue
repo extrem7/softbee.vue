@@ -9,6 +9,11 @@ import build from '~/shared/assets/build.svg'
 import design from '~/shared/assets/des.svg'
 import search from '~/shared/assets/search.svg'
 import support from '~/shared/assets/support.svg'
+import { dispatch } from '~/shared/utils'
+
+const openModal = () => {
+  dispatch('modal/open')
+}
 </script>
 
 <template>
@@ -22,14 +27,16 @@ import support from '~/shared/assets/support.svg'
       >
         <div class="self-center mt-12 md:col-start-1 md:col-end-5 md:mt-0">
           <h1
-            class="text-3xl font-bold text-center text-[#104065] md:text-4xl md:text-left"
+            class="text-3xl font-bold text-center text-blueSky md:text-4xl md:text-left"
           >
             Your partners in new products creating
           </h1>
-          <p class="mt-6 mb-12 text-2xl text-[#104065] md:my-12">
+          <p class="mt-6 mb-12 text-2xl text-blueSky md:my-12">
             with a beer drinking afterwards. and staying at home =)
           </p>
-          <SButton class="text-xl md:text-2xl">Let`s talk</SButton>
+          <SButton class="text-xl md:text-2xl" @click="openModal"
+            >Let`s talk</SButton
+          >
         </div>
         <div class="col-start-6 col-end-13 mx-auto">
           <img :src="menuImage" />
@@ -49,23 +56,25 @@ import support from '~/shared/assets/support.svg'
       <div
         class="self-center text-center md:col-start-8 md:col-end-13 md:text-left"
       >
-        <h1 class="mt-12 text-4xl font-bold text-[#104065] md:mt-0">
+        <h1 class="mt-12 text-4xl font-bold text-blueSky md:mt-0">
           We love taking products from vision to reality.
         </h1>
-        <p class="my-12 text-xl text-[#104065]">
+        <p class="my-12 text-xl text-blueSky">
           Somethings about how we work. We do all sorts of programming: Web,
           mobile, backend, desktop development. JS is our lovest language. Blala
           something more.
         </p>
-        <p class="mb-12 text-xl text-[#104065]">
+        <p class="mb-12 text-xl text-blueSky">
           We are a team of passionated mobile and web developers who love what
           they do. Also we love being on the same page with our clients and to
           deliver real cases to users.
         </p>
-        <SButton class="text-xl md:text-2xl">Meet our team 👊</SButton>
+        <SButton class="text-xl md:text-2xl" @click="openModal"
+          >Meet our team 👊</SButton
+        >
       </div>
       <div class="order-first col-start-1 col-end-8 self-center">
-        <img class="mx-auto" :src="pcTable" />
+        <img class="mx-auto" :src="pcTable" />,
       </div>
     </div>
   </div>
@@ -76,7 +85,7 @@ import support from '~/shared/assets/support.svg'
       >
         <div class="mx-auto w-full sm:w-[80%]">
           <p
-            class="mb-6 text-2xl font-bold text-center text-[#104065] md:mb-12 lg:text-4xl"
+            class="mb-6 text-2xl font-bold text-center text-blueSky md:mb-12 lg:text-4xl"
           >
             Looking for a team willing to go the extra mile for you?
           </p>
@@ -85,7 +94,7 @@ import support from '~/shared/assets/support.svg'
           <div><img class="hidden lg:block" :src="gears" alt="" /></div>
           <div>
             <p
-              class="text-2xl text-center text-[#104065] md:text-left lg:text-4xl"
+              class="text-2xl text-center text-blueSky md:text-left lg:text-4xl"
             >
               You're in the right place.
             </p>
@@ -93,7 +102,7 @@ import support from '~/shared/assets/support.svg'
           <div><img class="hidden lg:block" :src="code" alt="" /></div>
         </div>
       </div>
-      <div class="mt-24 text-[#104065]">
+      <div class="mt-24 text-blueSky">
         <div class="mb-6 lg:mb-14">
           <p class="text-4xl text-center">What we do?</p>
         </div>
@@ -107,7 +116,7 @@ import support from '~/shared/assets/support.svg'
               />
             </div>
             <p
-              class="self-center text-xl ms:text-2xl font-bold text-[#104065] sm:ml-6 md:text-3xl lg:text-3xl"
+              class="self-center text-xl ms:text-2xl font-bold text-blueSky sm:ml-6 md:text-3xl"
             >
               Research
             </p>
@@ -121,7 +130,7 @@ import support from '~/shared/assets/support.svg'
               />
             </div>
             <p
-              class="self-center text-xl ms:text-2xl font-bold text-[#104065] sm:ml-6 md:text-3xl lg:text-3xl"
+              class="self-center text-xl ms:text-2xl font-bold text-blueSky sm:ml-6 md:text-3xl"
             >
               Design
             </p>
@@ -135,7 +144,7 @@ import support from '~/shared/assets/support.svg'
               />
             </div>
             <p
-              class="self-center text-xl ms:text-2xl font-bold text-[#104065] sm:ml-6 md:text-3xl lg:text-3xl"
+              class="self-center text-xl ms:text-2xl font-bold text-blueSky sm:ml-6 md:text-3xl"
             >
               Build
             </p>
@@ -149,7 +158,7 @@ import support from '~/shared/assets/support.svg'
               />
             </div>
             <p
-              class="self-center text-xl ms:text-2xl font-bold text-[#104065] sm:ml-6 md:text-3xl lg:text-3xl"
+              class="self-center text-xl ms:text-2xl font-bold text-blueSky sm:ml-6 md:text-3xl"
             >
               Support
             </p>

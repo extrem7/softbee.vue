@@ -1,5 +1,5 @@
 import type { Meta, StoryFn } from '@storybook/vue3'
-import { SMemberCard } from '..'
+import { SMemberCard } from '.'
 import Yuri from '~/shared/assets/memberYuri.png'
 import Vlad from '~/shared/assets/memberVlad.png'
 
