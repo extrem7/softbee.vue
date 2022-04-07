@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import instagram from '~/shared/assets/instagram.svg'
+// import instagram from '~/shared/assets/instagram.svg'
 </script>
 
 <template>

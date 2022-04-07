@@ -14,7 +14,7 @@ const meta: Meta = {
 
 export default meta
 
-export const MobileCase: StoryFn = (props) => <SMobileCase {...props} />
+export const MobileCase: StoryFn = (props: any) => <SMobileCase {...props} />
 
 MobileCase.args = {
   img: phone,
