@@ -1,7 +1,7 @@
 <script setup lang="ts">
-defineProps({
-  footer: { type: Boolean },
-})
+defineProps<{
+  footer: boolean
+}>()
 </script>
 
 <template>

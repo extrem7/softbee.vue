@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { computed, ref } from 'vue'
 import { SMenu, SFooter, SMemberCard } from '~/shared/ui/layout'
 import { SArrow, SDeclarationCircle, STriangle } from '~/shared/ui'
 import ourTeamHeader from '~/shared/assets/ourTeamHeader.svg'
@@ -27,11 +27,9 @@ const items = [
 ]
 
 const defaultCount = ref(6)
-const newItems = ref(items.slice(0, 6))
-
+const newItems = computed(() => items.slice(0, defaultCount.value))
 const addNextItem = () => {
   defaultCount.value += 6
-  newItems.value = items.slice(0, defaultCount.value)
 }
 </script>
 
