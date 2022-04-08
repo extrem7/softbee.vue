@@ -1,1 +1,1 @@
-export { default as useBus, dispatch } from './useBus'
+export { useBus, dispatch } from './useBus'

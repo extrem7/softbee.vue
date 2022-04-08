@@ -18,4 +18,4 @@ const useBus = (type: string, callback: () => void) => {
   return dispatch
 }
 
-export default useBus
+export { useBus }

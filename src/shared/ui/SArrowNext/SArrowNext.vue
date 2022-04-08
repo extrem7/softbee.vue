@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import ArrowNext from '~/shared/assets/ArrowNext.svg'
 
-defineProps({ disabled: Boolean, left: Boolean })
+defineProps<{ disabled?: boolean; left?: boolean }>()
 </script>
 
 <template>

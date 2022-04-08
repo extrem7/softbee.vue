@@ -1,10 +1,10 @@
 <script setup lang="ts">
-defineProps({
-  android: { type: Boolean },
-  imgSecond: { type: String, required: true },
-  logo: { type: String, required: true },
-  img: { type: String, required: true },
-})
+defineProps<{
+  android: boolean
+  imgSecond: string
+  logo: string
+  img: string
+}>()
 </script>
 <template>
   <div class="container grid grid-cols-11 mx-auto">

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const props = defineProps<{
+defineProps<{
   rotate?: boolean
 }>()
 </script>
@@ -7,7 +7,7 @@ const props = defineProps<{
 <template>
   <div
     :class="[
-      !props.rotate
+      !rotate
         ? 'xl:bg-[url(~/shared/assets/bgTriangle.svg)] bg-no-repeat bg-contain'
         : 'xl:bg-[url(~/shared/assets/bgTriangleRotate.svg)] bg-right bg-no-repeat bg-contain',
     ]"
