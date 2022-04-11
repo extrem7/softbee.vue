@@ -37,7 +37,7 @@ const items = [
 
 <template>
   <SMenu />
-  <div class="py-24 px-6 mx-auto max-w-[1200px] lg:px-12">
+  <div class="px-6 pb-32 mx-auto max-w-[1200px] lg:px-12">
     <div class="mx-auto w-full md:w-10/12">
       <h1
         class="mx-auto text-3xl font-bold text-center text-blueSky sm:w-9/12 lg:text-4xl"
