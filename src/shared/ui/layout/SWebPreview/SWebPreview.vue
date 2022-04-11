@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import WebPreview from '~/shared/assets/webPreview.png'
-import PhoneWebPreview from '~/shared/assets/phoneWebPreview.png'
 import { SButton } from '~/shared/ui'
 
 defineProps<{

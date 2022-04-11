@@ -4,7 +4,7 @@ import HeaderLogo from '~/shared/assets/webLogo.svg'
 </script>
 
 <template>
-  <div class="container grid grid-cols-12">
+  <div class="grid grid-cols-12 mx-auto max-w-[1200px]">
     <div class="col-start-1 col-end-7">
       <img :src="HeaderWeb" />
     </div>

@@ -60,7 +60,9 @@ onUnmounted(() => {
         class="hidden flex-col order-first col-start-1 col-end-4 justify-end lg:flex lg:flex-row lg:order-last lg:col-start-4 lg:col-end-13"
       >
         <div class="flex flex-col lg:flex-row">
-          <SLink :footer="isStick" class="lg:mx-6" href="#">Work</SLink>
+          <SLink to="/work" :footer="isStick" class="lg:mx-6" href="#"
+            >Work</SLink
+          >
           <SLink to="/team" :footer="isStick" class="mt-6 lg:mx-6 lg:mt-0"
             >Our Team</SLink
           >
@@ -94,7 +96,7 @@ onUnmounted(() => {
       @click.stop
     >
       <div class="flex flex-col mt-6">
-        <SLink footer class="my-4 text-3xl">Work</SLink>
+        <SLink to="/work" footer class="my-4 text-3xl">Work</SLink>
         <SLink to="/team" footer class="my-4 text-3xl">Our team</SLink>
         <SLink footer class="my-4 text-3xl">Blog</SLink>
         <SButton
