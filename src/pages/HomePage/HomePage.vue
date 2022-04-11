@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { SMenu, SFooter } from '~/shared/ui/layout'
+import { SMenu, SFooter, SWebPreview } from '~/shared/ui/layout'
 import menuImage from '~/shared/assets/menuImage.svg'
 import pcTable from '~/shared/assets/pcTable.svg'
 import { SButton, SDashboard } from '~/shared/ui'
@@ -10,6 +10,8 @@ import design from '~/shared/assets/des.svg'
 import search from '~/shared/assets/search.svg'
 import support from '~/shared/assets/support.svg'
 import { dispatch } from '~/shared/utils'
+import webPreview from '~/shared/assets/webPreview.png'
+import phoneWebPreview from '~/shared/assets/phoneWebPreview.png'
 
 const openModal = () => {
   dispatch('modal/open')

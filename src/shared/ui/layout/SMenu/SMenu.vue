@@ -97,7 +97,11 @@ onUnmounted(() => {
         <SLink footer class="my-4 text-3xl">Work</SLink>
         <SLink to="/team" footer class="my-4 text-3xl">Our team</SLink>
         <SLink footer class="my-4 text-3xl">Blog</SLink>
-        <SButton class="mx-auto mt-2 w-8/12" @click="openModal">
+        <SButton
+          outline
+          class="mx-auto mt-2 w-8/12 text-white"
+          @click="openModal"
+        >
           Let’s talk 👋
         </SButton>
       </div>
