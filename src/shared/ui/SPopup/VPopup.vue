@@ -70,6 +70,13 @@ const stepPrev = () => {
   }
 }
 
+const regularEmail =
+  /^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$/
+
+const validation = (email: string) => {
+  return String(email).toLowerCase().match(regularEmail)
+}
+
 const stepNext = () => {
   if (currentStep.value === 'step1') {
     currentData.name = inputValue.value
@@ -80,10 +87,17 @@ const stepNext = () => {
   if (currentStep.value === 'step3') {
     currentData.price = inputValue.value
   }
-  if (currentStep.value === 'step4') {
+  if (currentStep.value === 'step4' && validation(inputValue.value)) {
     currentData.email = inputValue.value
   }
   if (step.length - 1 > countStep.value && inputValue.value !== '') {
+    if (currentStep.value === 'step4') {
+      if (validation(inputValue.value)) {
+        inputValue.value = ''
+        countStep.value += 1
+      }
+      return
+    }
     inputValue.value = ''
     countStep.value += 1
   }
@@ -143,7 +157,9 @@ useBus('modal/open', () => actionModal(true))
         <div class="self-center">
           <SArrowNext
             v-if="countStep !== 4"
-            :disabled="countStep === 4 || inputValue === ''"
+            :disabled="
+              inputValue === '' || (countStep === 3 && !validation(inputValue))
+            "
             class="mx-auto w-9/12 md:w-full"
             @click="stepNext"
           />
