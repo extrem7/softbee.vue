@@ -19,7 +19,7 @@ defineProps<{
         <img :src="firstImage" />
       </div>
       <div class="mx-auto w-10/12 sm:w-1/4">
-        <img class="mx-auto" :src="secondImage" />
+        <img class="mx-auto max-h-[280px] lg:h-auto" :src="secondImage" />
       </div>
     </div>
     <div

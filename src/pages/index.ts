@@ -1,5 +1,6 @@
 import { HomePage } from './HomePage'
 import { OurTeam } from './OurTeam'
+import { WorkItemPage } from './WorkItemPage'
 import { WorkPage } from './WorkPage'
 
 export const routes = [
@@ -17,5 +18,10 @@ export const routes = [
     path: '/work',
     name: 'work',
     component: WorkPage,
+  },
+  {
+    path: '/work-item',
+    name: 'work item',
+    component: WorkItemPage,
   },
 ]

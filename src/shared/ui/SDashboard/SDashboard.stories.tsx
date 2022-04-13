@@ -1,8 +1,8 @@
 import type { Meta, StoryFn } from '@storybook/vue3'
-import { SDashboard } from '..'
+import { SDashboard } from '.'
 
 const meta: Meta = {
-  title: 'UI/Phone',
+  title: 'UI/PreviewMobile',
   component: SDashboard,
   parameters: {
     layout: 'padded',
@@ -11,7 +11,4 @@ const meta: Meta = {
 
 export default meta
 
-export const Phone: StoryFn = (props) => <SDashboard {...props} />
-
-export const PhoneMenu = Phone.bind({})
-PhoneMenu.args = { outline: true }
+export const PreviewMobile: StoryFn = (props) => <SDashboard {...props} />

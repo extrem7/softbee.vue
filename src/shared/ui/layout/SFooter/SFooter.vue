@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { ref } from 'vue'
 import {
   SInstagramIcon,
   SUpworkIcon,
@@ -6,6 +7,14 @@ import {
   SInput,
   SLink,
 } from '~/shared/ui'
+
+const inputValue = ref('')
+
+const sendMessage = () => {
+  if (inputValue.value.length >= 10) {
+    inputValue.value = ''
+  }
+}
 </script>
 
 <template>
@@ -16,9 +25,9 @@ import {
       <div class="self-center">
         <div class="flex">
           <div>
-            <SLink footer>Work</SLink>
+            <SLink to="/work" footer>Work</SLink>
             <SLink to="/team" footer class="mx-5 lg:mx-10">Our team</SLink>
-            <SLink footer>Contacts</SLink>
+            <SLink to="/blog" footer>Contacts</SLink>
           </div>
         </div>
         <div class="flex justify-center mt-10 lg:mt-20">
@@ -36,11 +45,18 @@ import {
         </div>
         <div>
           <SInput
+            v-model:modelValue="inputValue"
             class="mr-6 w-[180px] sm:w-[250px] md:w-[385px]"
             placeholder="Let’s create something dope!"
           />
           <button
-            class="py-1 px-5 mt-6 text-3xl text-yellowstone hover:text-blueSky hover:bg-yellowstone rounded-xl border-[2px] border-yellowstone duration-300 ease-in-out"
+            :class="[
+              inputValue.length <= 10
+                ? 'cursor-default opacity-50'
+                : 'hover:text-blueSky hover:bg-yellowstone cursor-pointer',
+            ]"
+            class="py-1 px-5 mt-6 text-3xl text-yellowstone rounded-xl border-[2px] border-yellowstone duration-300 ease-in-out"
+            @click="sendMessage"
           >
             ➔
           </button>

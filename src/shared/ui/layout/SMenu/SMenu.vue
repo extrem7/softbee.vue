@@ -40,7 +40,7 @@ onUnmounted(() => {
 <template>
   <SPopup />
   <div
-    class="bg-no-repeat md:min-h-[216px]"
+    class="bg-no-repeat lg:min-h-[216px]"
     :class="[isStick ? 'bg-none' : 'lg:bg-[url(~/shared/assets/menu.svg)]']"
   >
     <div
@@ -66,7 +66,11 @@ onUnmounted(() => {
           <SLink to="/team" :footer="isStick" class="mt-6 lg:mx-6 lg:mt-0"
             >Our Team</SLink
           >
-          <SLink :footer="isStick" class="my-6 lg:my-0 lg:mx-6" href="#"
+          <SLink
+            to="/blog"
+            :footer="isStick"
+            class="my-6 lg:my-0 lg:mx-6"
+            href="#"
             >Blog</SLink
           >
         </div>
@@ -98,7 +102,7 @@ onUnmounted(() => {
       <div class="flex flex-col mt-6">
         <SLink to="/work" footer class="my-4 text-3xl">Work</SLink>
         <SLink to="/team" footer class="my-4 text-3xl">Our team</SLink>
-        <SLink footer class="my-4 text-3xl">Blog</SLink>
+        <SLink to="/blog" footer class="my-4 text-3xl">Blog</SLink>
         <SButton
           outline
           class="mx-auto mt-2 w-8/12 text-white"

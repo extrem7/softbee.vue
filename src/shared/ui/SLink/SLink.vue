@@ -16,3 +16,9 @@ defineProps<{
     ><slot />
   </RouterLink>
 </template>
+
+<style scoped>
+.router-link-active {
+  color: rgb(245 208 64);
+}
+</style>

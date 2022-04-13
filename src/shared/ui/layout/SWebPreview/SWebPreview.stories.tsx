@@ -12,6 +12,3 @@ const meta: Meta = {
 export default meta
 
 export const WebPreview: StoryFn = (props) => <SWebPreview {...props} />
-
-export const PhoneWebPreview = WebPreview.bind({})
-PhoneWebPreview.args = { outline: true }

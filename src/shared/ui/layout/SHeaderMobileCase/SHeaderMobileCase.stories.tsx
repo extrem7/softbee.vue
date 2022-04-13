@@ -14,6 +14,3 @@ export default meta
 export const HeaderMobileCase: StoryFn = (props) => (
   <SHeaderMobileCase {...props} />
 )
-
-export const HeaderiPhone = HeaderMobileCase.bind({})
-HeaderMobileCase.args = { outline: true }
